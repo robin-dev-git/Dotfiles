@@ -218,7 +218,7 @@ screens = [
                     colour_no_updates="ff5500",
                     display_format='Updated: {updates}',
                     padding=10,
-                    execute="alacritty -e sudo pacman -Syyu",
+                    execute="mate-terminal -e sudo pacman update",
                 ),
                 widget.Clock(format='%Y-%m-%d %a   %I:%M %p', padding=10),
                 widget.Systray(),
@@ -291,7 +291,7 @@ cmd = [
     #"udiskie -t &",
     "nm-applet &",
     #"volumeicon &",
-    #"cbatticon &",
+    "cbatticon &",
 ]
 
 for x in cmd:
