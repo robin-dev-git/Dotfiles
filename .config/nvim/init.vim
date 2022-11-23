@@ -20,8 +20,19 @@ Plug 'jiangmiao/auto-pairs'
 " For Commenting gcc & gc
 Plug 'https://github.com/tpope/vim-commentary'
 
-"Theme
-Plug 'dracula/vim'
+" ------------ Theme ---------------------
+
+" Dracula
+"Plug 'dracula/vim'
+
+" GruvBox
+Plug 'morhetz/gruvbox'
+
+" OneHalf
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
+
+" Molokai
+Plug 'tomasr/molokai'
 
 " Language Client
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -57,7 +68,7 @@ endif
 
 " Theme
 syntax enable
-colorscheme dracula
+colorscheme gruvbox
 
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
