@@ -13,31 +13,39 @@ set autoindent
 set fileformat=unix
 
 call plug#begin("~/.vim/plugged")
-  
-	Plug 'jiangmiao/auto-pairs'
 
-" Theme
-  Plug 'dracula/vim'
+" Auto paréntesis
+Plug 'jiangmiao/auto-pairs'
 
-  " Language Client
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
-  " TypeScript Highlighting
-  Plug 'leafgarland/typescript-vim'
-  Plug 'peitalin/vim-jsx-typescript'
+" For Commenting gcc & gc
+Plug 'https://github.com/tpope/vim-commentary'
 
-  Plug 'https://github.com/vim-airline/vim-airline' " Status bar
+"Theme
+Plug 'dracula/vim'
+
+" Language Client
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
+" TypeScript Highlighting
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+
+" Status bar
+Plug 'https://github.com/vim-airline/vim-airline' 
 
 
-  " CSS colors
-  Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
+" CSS colors
+Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
 
 
-  " File Explorer with Icons
-  Plug 'scrooloose/nerdtree'
-  Plug 'ryanoasis/vim-devicons'
+" File Explorer with Icons
+Plug 'scrooloose/nerdtree'
+Plug 'ryanoasis/vim-devicons'
 
-"  set encoding=UTF-8
+" Open Terminal on Vim or NeoVim
+Plug 'https://github.com/tc50cal/vim-terminal'
+
+set encoding=UTF-8
 
 
 call plug#end()
