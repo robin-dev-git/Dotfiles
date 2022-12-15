@@ -36,3 +36,9 @@ Installed is very easy  a line of commands on terminal:
 ```
 sudo pacman -S qtile
 ```
+## Installed the packages of config on Qtile
+
+### Ubuntu/Debian
+```
+sudo apt install lxappearance picom rofi feh which
+```
